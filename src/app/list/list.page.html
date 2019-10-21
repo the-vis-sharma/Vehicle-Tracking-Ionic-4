@@ -12,10 +12,10 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
+      <ion-icon name="wifi" slot="start"></ion-icon>
+      {{item.lng}}, {{item.lat}}
       <div class="item-note" slot="end">
-        {{item.note}}
+        {{ item.timeStamp | date : 'MMM d, h:mm a' }}
       </div>
     </ion-item>
   </ion-list>
